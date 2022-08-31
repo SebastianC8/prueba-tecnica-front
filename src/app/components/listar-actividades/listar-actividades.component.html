@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 mt-3">
+      <h3>Ver actividades</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Descripción</th>
+            <th scope="col">Tiempos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngIf="listaActividades.length > 0">
+            <ng-container *ngFor="let actividad of listaActividades">
+              <tr>
+                <td>{{actividad.descripcion}}</td>
+                <td>{{actividad.descripcion}}</td>
+              </tr>
+            </ng-container>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
