@@ -9,6 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ListarActividadesComponent } from './components/listar-actividades/listar-actividades.component';
 import { CrearActividadesComponent } from './components/crear-actividades/crear-actividades.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { RegistroComponent } from './components/registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LoginComponent,
     ListarActividadesComponent,
     CrearActividadesComponent,
-    NavbarComponent
+    NavbarComponent,
+    RegistroComponent
   ],
   imports: [
     AppRoutingModule,

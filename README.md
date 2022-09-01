@@ -1,4 +1,4 @@
-# Client
+<!-- # Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ -->
+
+# Client
+
+Ejecutar `ng serve` para ejecutar el proyecto. Correrá el proyecto en la siguiente url: http://localhost:4200
+
+## Instalaciones necesarias
+`Angular CLI:` 10.2.4
+`Node:` 16.13.1

@@ -76,6 +76,14 @@ export class CrearActividadesComponent implements OnInit {
               showConfirmButton: false,
               timer: 1500
             });
+          } else {
+            Swal.fire({
+              position: 'center',
+              icon: 'error',
+              title: data.response,
+              showConfirmButton: false,
+              timer: 1500
+            });
           }
         }
       });

@@ -15,4 +15,8 @@ export class LoginService {
     return this.http.post(`${this.url}/api/login`, params);
   }
 
+  public registro = (params: FormData) => {
+    return this.http.post(`${this.url}/api/registro`, params);
+  }
+
 }

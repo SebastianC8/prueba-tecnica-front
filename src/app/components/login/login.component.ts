@@ -44,7 +44,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/listar-actividades']);
         } else {
           /** Credenciales incorrectas */
-          Swal.fire({  
+          Swal.fire({
             position: 'center',
             icon: 'error',
             title: data.response,
