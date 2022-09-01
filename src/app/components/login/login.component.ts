@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoginService } from '../../services/login.service';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 import { Router } from '@angular/router';
 
 @Component({
@@ -43,7 +44,13 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/listar-actividades']);
         } else {
           /** Credenciales incorrectas */
-          window.alert(data.response);
+          Swal.fire({  
+            position: 'center',
+            icon: 'error',
+            title: data.response,
+            showConfirmButton: false,
+            timer: 1500
+          });
         }
       }
     });

@@ -11,11 +11,15 @@
           </tr>
         </thead>
         <tbody>
-          <ng-container *ngIf="listaActividades.length > 0">
+          <ng-container *ngIf="listaActividades && listaActividades.length > 0;">
             <ng-container *ngFor="let actividad of listaActividades">
               <tr>
                 <td>{{actividad.descripcion}}</td>
-                <td>{{actividad.descripcion}}</td>
+                <td *ngIf="actividad.tiempos">
+                  <ul *ngFor="let tiempo of actividad.tiempos">
+                    <li>{{tiempo.fecha}} - {{ tiempo.tiempo }} horas</li>
+                  </ul>
+                </td>
               </tr>
             </ng-container>
           </ng-container>

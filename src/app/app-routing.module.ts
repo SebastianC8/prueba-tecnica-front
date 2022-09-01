@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { TokenGuard } from './guards/token.guard';
 
 /**
  * Componentes
@@ -10,8 +11,8 @@ import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'listar-actividades', component: ListarActividadesComponent },
-  { path: 'crear-actividades', component: CrearActividadesComponent },
+  { path: 'listar-actividades', component: ListarActividadesComponent, canActivate: [TokenGuard] },
+  { path: 'crear-actividades', component: CrearActividadesComponent, canActivate: [TokenGuard] },
   { path: '**', redirectTo: 'login' }
 ];
 

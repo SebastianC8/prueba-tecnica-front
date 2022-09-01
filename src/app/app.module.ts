@@ -10,7 +10,6 @@ import { ListarActividadesComponent } from './components/listar-actividades/list
 import { CrearActividadesComponent } from './components/crear-actividades/crear-actividades.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
