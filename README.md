@@ -28,8 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
  -->
 
 # Client
-
-Ejecutar `ng serve` para ejecutar el proyecto. Correrá el proyecto en la siguiente url: http://localhost:4200
+1. Ejecutar el comando `npm install`.
+2. Ejecutar el comando `ng serve` para levantar el servidor. El proyecto correrá en la siguiente url: http://localhost:4200
 
 # Instalaciones necesarias
 ## `Angular CLI:` versión 10.2.4.
