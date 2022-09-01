@@ -31,6 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Ejecutar `ng serve` para ejecutar el proyecto. Correrá el proyecto en la siguiente url: http://localhost:4200
 
-## Instalaciones necesarias
-`Angular CLI:` 10.2.4
-`Node:` 16.13.1
+# Instalaciones necesarias
+## `Angular CLI:` versión 10.2.4.
+## `Node:` versión 16.13.1.
